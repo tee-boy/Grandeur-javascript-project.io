@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Project</title>
+    <!-- limks limks links links -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- --!!!!!!--->
+    <!-- script -->
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Element to contain animated typing -->
+<span id="element"></span>
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<!-- end -->
+</head>
+<body>
+    <section class="welcome__section" oncontextmenu="return false">
+        <div class="welcome__header">
+            <p class="welcome__text">click on the <span class="auto__type"></span></p>
+        </div>
+    </section>
+    <section class="form__section">
+<!-- carousel carousel carousel -->
+<div class="form__container">
+    
+  <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <!--  -->
+      <div class="carousel-item active" data-bs-interval="10000">
+        <p class="form__text"> When you are done filling your details swipe to the right or  click on the next button to see details</p>
+      <button class="fill__btn" type="submit" value="click to type in your details">Fill details</button>
+      </div>
+      <!--  -->
+      <div class="carousel-item" data-bs-interval="2000">
+      <p class="form__text">Click on the see button to see your infromations in details and don't forget to remember your password</p>
+      <span id="reveal"></span> <br>
+      <button id="see__btn" type="submit" value="click to see your details " onclick="revealDetails()">See details</button>
+      </div>
+     <!-- end -->
+    </div>
+    <!-- catrousel buttons -->
+    <button id="carousel__btn"  class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button id="carousel__btn"  class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>  
+</div> 
+<!-- carousel end -->    
+    </section>
+ 
+<!-- script scripts -->
+
+<script src="index.js"></script>
+  <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('.auto__type', {
+      strings: ['fill button to fill details', 'see details button to see details'],
+      typeSpeed: 250,
+      loop: true
+    });
+  </script>
+  <!-- scripts end -->
+</body>
+<footer>
+    <b class="footer__text">© Tochukwu Emanuel Kelechi</b>
+</footer>
+</html>
